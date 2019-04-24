@@ -1,10 +1,13 @@
-﻿import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-export default class Counter extends React.Component {
+﻿import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Counter extends React.Component {
    
    constructor() {
       super();
-      this.state = { currentCount: 0 };
+      this.state = { 
+         currentCount: 0 
+      };
    }
    render() {
       return <div>
@@ -22,3 +25,5 @@ export default class Counter extends React.Component {
       });
    }
 }
+
+export default Counter;
