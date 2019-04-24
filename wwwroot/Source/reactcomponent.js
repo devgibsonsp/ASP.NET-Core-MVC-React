@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
+import Welcome from './components/welcome';
 
 class Counter extends React.Component {
    
@@ -11,6 +12,7 @@ class Counter extends React.Component {
    }
    render() {
       return <div>
+         <Welcome/>
          <h1>Counter</h1>
          <p>This is a simple example of a React component.</p>    <p>Current count: <strong>{this.state.currentCount}</strong></p>
          <button onClick={() => {
