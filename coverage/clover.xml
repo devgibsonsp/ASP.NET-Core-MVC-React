@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556119057545" clover="3.2.0">
-  <project timestamp="1556119057545" name="All files">
+<coverage generated="1556233256271" clover="3.2.0">
+  <project timestamp="1556233256272" name="All files">
     <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3" elements="9" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="reactcomponent.js" path="C:\Users\sgibson\source\repos\ASPNetCoreReact\ASPNetCoreReact\wwwroot\Source\reactcomponent.js">
+    <file name="counter.js" path="C:\Users\sgibson\source\repos\ASPNetCoreReact\ASPNetCoreReact\wwwroot\react\components\counter.js">
       <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
       <line num="7" count="2" type="stmt"/>
       <line num="8" count="2" type="stmt"/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from 'ui/components/counter';
-import Weather from 'ui/components/weather';
+import Counter from '../components/Counter';
+import Weather from '../components/Weather';
 ReactDOM.render(
    <Counter />,
    document.getElementById('basicreactcomponent')

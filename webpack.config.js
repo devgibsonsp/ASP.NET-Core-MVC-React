@@ -9,8 +9,8 @@ module.exports = {
       minimizer: [new UglifyJsPlugin()],
    },
   entry: {
-   Index: path.resolve(__dirname, './wwwroot/react/entrypoints/test1.js'),
-   Test: path.resolve(__dirname, './wwwroot/react/entrypoints/test2.js')
+   Index: path.resolve(__dirname, './wwwroot/react/entrypoints/Index.jsx'),
+   Test: path.resolve(__dirname, './wwwroot/react/entrypoints/Test.jsx')
   },
   output: {
             path: path.resolve(__dirname, 'wwwroot/dist'),
@@ -35,7 +35,7 @@ module.exports = {
             })
           },
          {
-            test: /\.js?$/,
+            test: /\.jsx?$/,
             use: {
                loader: 'babel-loader', options: {
                   presets:
@@ -44,6 +44,9 @@ module.exports = {
             }
          },
       ]
-   }
+   },
+   resolve: {
+      extensions: ['.js', '.jsx']
+    },
           
 };
