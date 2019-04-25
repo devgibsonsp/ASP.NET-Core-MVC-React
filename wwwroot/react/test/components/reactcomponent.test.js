@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Counter from 'ui/Source/reactcomponent';
+import Counter from 'ui/reactcomponent';
 
 describe('Test Counter component', () => {
      it('renders the counter component successfully', () => {
