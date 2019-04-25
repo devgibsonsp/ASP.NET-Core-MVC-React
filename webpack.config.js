@@ -9,8 +9,8 @@ module.exports = {
       minimizer: [new UglifyJsPlugin()],
    },
   entry: {
-   main: path.resolve(__dirname, './wwwroot/source/app.js'),
-   secondary: path.resolve(__dirname, './wwwroot/source/app.js')
+   main: path.resolve(__dirname, './wwwroot/source/test1.js'),
+   secondary: path.resolve(__dirname, './wwwroot/source/test2.js')
   },
   output: {
             path: path.resolve(__dirname, 'wwwroot/dist'),
