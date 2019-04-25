@@ -8,10 +8,13 @@ module.exports = {
    optimization: {
       minimizer: [new UglifyJsPlugin()],
    },
-  entry: './wwwroot/source/app.js',
+  entry: {
+   main: path.resolve(__dirname, './wwwroot/source/app.js'),
+   secondary: path.resolve(__dirname, './wwwroot/source/app.js')
+  },
   output: {
             path: path.resolve(__dirname, 'wwwroot/dist'),
-            filename: 'bundle.js'
+            filename: '[name].js'
           },
   plugins: [
    extractCSS,

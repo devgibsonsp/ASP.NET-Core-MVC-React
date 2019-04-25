@@ -12,5 +12,11 @@ namespace ASPNetCoreReact.Controllers
         {
             return View();
         }
-    }
+
+      public IActionResult Test()
+      {
+         ViewData["Message"] = "This is a test page.";
+         return View();
+      }
+   }
 }
