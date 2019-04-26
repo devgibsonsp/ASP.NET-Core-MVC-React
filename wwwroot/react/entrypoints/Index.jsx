@@ -14,14 +14,28 @@ class Index extends React.Component {
          loading: true 
       };
    }
+
+   componentDidMount = () => {
+      this.setState({
+         loading: false,
+      })
+   }
    render() {
       const { loading } = this.state;
       return (
          <div>
-            <TopMenu
-               testItem='Click me!'
-            />
-            <InputForm />
+         {
+            loading 
+            ? 
+               <div>loading...</div>
+            : 
+            <div>
+               <TopMenu
+                  testItem='Click me!'
+               />
+               <InputForm />
+            </div>
+         }
          </div>
       )
    }
