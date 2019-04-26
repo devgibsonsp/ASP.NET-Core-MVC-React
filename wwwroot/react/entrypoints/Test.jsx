@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Weather from '../components/Weather';
+import FetchData from '../components/fetchdata';
 
 ReactDOM.render(
-   <Weather />,
-   document.getElementById('weather')
+   <FetchData />,
+   document.getElementById('reactcomponentwithapidata')
 );

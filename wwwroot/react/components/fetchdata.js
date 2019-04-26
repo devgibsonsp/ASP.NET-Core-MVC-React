@@ -1,7 +1,7 @@
 import * as React from 'react';
 import 'es6-promise';
 import 'isomorphic-fetch';
-export default class Weather extends React.Component {
+export default class FetchData extends React.Component {
    constructor() {
       super();
       this.state = { forecasts: [], loading: true };
