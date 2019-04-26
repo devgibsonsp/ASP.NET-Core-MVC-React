@@ -9,8 +9,8 @@ module.exports = {
       minimizer: [new UglifyJsPlugin()],
    },
   entry: {
-   Index: path.resolve(__dirname, './wwwroot/react/entrypoints/test1.js'),
-   Test: path.resolve(__dirname, './wwwroot/react/entrypoints/test2.js')
+   Index: path.resolve(__dirname, './wwwroot/react/entrypoints/Index.jsx'),
+   Test: path.resolve(__dirname, './wwwroot/react/entrypoints/Test.jsx')
   },
   output: {
             path: path.resolve(__dirname, 'wwwroot/dist'),
@@ -26,6 +26,7 @@ module.exports = {
                      }),
           ],
    module: {
+
       rules: [
          {
             test: /\.css$/,
@@ -35,7 +36,7 @@ module.exports = {
             })
           },
          {
-            test: /\.js?$/,
+            test: /\.jsx?$/,
             use: {
                loader: 'babel-loader', options: {
                   presets:
@@ -43,7 +44,36 @@ module.exports = {
                }
             }
          },
+         {
+            test: /\.scss$/,
+            use: [
+              { loader: 'style-loader' },
+              { loader: 'css-loader' },
+              { loader: 'sass-loader' }
+            ]
+          },
+          {
+            test: /\.(woff2?|ttf|eot)$/,
+            use: {
+              loader: 'file-loader'
+            }
+          },
+          {
+            test: /\.(jpg|png|svg)$/,
+            use: {
+              loader: 'file-loader'
+            }
+          },
+          { 
+            test: /\.js$|\.jsx$/,
+            use: {
+              loader: 'babel-loader'
+            }
+          }
       ]
-   }
+   },
+   resolve: {
+      extensions: ['.js', '.jsx']
+    },
           
 };
