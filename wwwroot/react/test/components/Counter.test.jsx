@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Counter from 'ui/components/counter';
+import Counter from 'ui/components/Counter';
 
-describe('Test Counter component', () => {
+describe('Test <Counter/>', () => {
      it('renders the counter component successfully', () => {
         const wrapper = shallow(<Counter/>);
         expect(wrapper.exists()).toEqual(true);

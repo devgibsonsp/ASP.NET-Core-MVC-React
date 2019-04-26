@@ -26,6 +26,7 @@ module.exports = {
                      }),
           ],
    module: {
+
       rules: [
          {
             test: /\.css$/,
@@ -43,6 +44,32 @@ module.exports = {
                }
             }
          },
+         {
+            test: /\.scss$/,
+            use: [
+              { loader: 'style-loader' },
+              { loader: 'css-loader' },
+              { loader: 'sass-loader' }
+            ]
+          },
+          {
+            test: /\.(woff2?|ttf|eot)$/,
+            use: {
+              loader: 'file-loader'
+            }
+          },
+          {
+            test: /\.(jpg|png|svg)$/,
+            use: {
+              loader: 'file-loader'
+            }
+          },
+          { 
+            test: /\.js$|\.jsx$/,
+            use: {
+              loader: 'babel-loader'
+            }
+          }
       ]
    },
    resolve: {

@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from '../components/Counter';
-import Weather from '../components/Weather';
-ReactDOM.render(
-   <Counter />,
-   document.getElementById('basicreactcomponent')
-);
+import TopMenu from '../components/TopMenu';
+import InputForm from '../components/InputForm';
+import 'semantic-ui-css/semantic.min.css';
+
+
+class Index extends React.Component {
+   
+   constructor() {
+      super();
+      this.state = { 
+         currentCount: 0,
+         loading: true 
+      };
+   }
+   render() {
+      const { loading } = this.state;
+      return (
+         <div>
+            <TopMenu
+               testItem='Click me!'
+            />
+            <InputForm />
+         </div>
+      )
+   }
+}
+
 
 ReactDOM.render(
-   <Weather />,
-   document.getElementById('reactcomponentwithapidata')
+   <Index />,
+   document.getElementById('Index')
 );
