@@ -6,6 +6,7 @@ describe('Test <InputForm/>', () => {
      it('renders the InputForm component successfully', () => {
         const wrapper = shallow(<InputForm/>);
         expect(wrapper.exists()).toEqual(true);
+        
      });
   });
 

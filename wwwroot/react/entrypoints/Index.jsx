@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import TopMenu from '../components/TopMenu';
 import InputForm from '../components/InputForm';
 import 'semantic-ui-css/semantic.min.css';
-
+import { Button } from 'osprey-component-library';
 
 class Index extends React.Component {
    
@@ -34,6 +34,7 @@ class Index extends React.Component {
                   testItem='Click me!'
                />
                <InputForm />
+               <Button primary> Hello!</Button>
             </div>
          }
          </div>

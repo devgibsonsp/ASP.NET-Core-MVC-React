@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match <Counter/> Snapshot Matches the previous snapshot of the component 1`] = `
+<div>
+  <h1>
+    Counter
+  </h1>
+  <p>
+    This is a simple example of a React component.
+  </p>
+      
+  <p>
+    Current count: 
+    <strong>
+      0
+    </strong>
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+</div>
+`;
